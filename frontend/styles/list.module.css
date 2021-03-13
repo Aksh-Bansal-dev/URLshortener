@@ -1,0 +1,14 @@
+.container {
+  /* background: var(--primary); */
+  margin-top: 3vh;
+  color: white;
+  width: 86vh;
+}
+.container li {
+  list-style: none;
+}
+.url {
+  color: gold;
+  text-decoration: underline;
+  /* background-color: var(--primary); */
+}
