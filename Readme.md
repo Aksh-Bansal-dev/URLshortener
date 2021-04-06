@@ -16,7 +16,7 @@ Shortens URLs.
 
 ```
 docker run -p 5432:5432 --name postgresserver -d \
--e POSTGRES_PASSWORD=postgres \
+-e POSTGRES_PASSWORD=password \
 -e POSTGRES_USER=postgres \
 -e POSTGRES_DB=shorturl \
 -v /var/lib/postgresql/data \
@@ -30,7 +30,7 @@ OR
 
 ```
 docker run -p 5432:5432 --name postgresserver -d \
--e POSTGRES_PASSWORD=postgres \
+-e POSTGRES_PASSWORD=password \
 -e POSTGRES_USER=postgres \
 -e POSTGRES_DB=shorturl \
 postgres

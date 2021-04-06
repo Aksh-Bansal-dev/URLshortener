@@ -50,7 +50,13 @@ app.get("/api/:id", (req, res) => {
         console.log(error);
         res.status(404).json({ err: "url not found" });
       }
-      res.redirect(result.rows[0].url);
+      if (result.rows[0].url.substring(0, 8) == "https://") {
+        console.log(result.rows[0].url);
+        res.redirect(result.rows[0].url);
+      } else {
+        console.log(result.rows[0].url.substring(0, 8));
+        res.redirect("https://" + result.rows[0].url);
+      }
     }
   );
 });
