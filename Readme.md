@@ -52,4 +52,4 @@ CREATE TABLE urls ( ID SERIAL PRIMARY KEY, URL VARCHAR(100));
 
 ## How to use (Docker edition)
 
-[Docker setup]()
+[Docker setup](DOCKER_SETUP.md)
